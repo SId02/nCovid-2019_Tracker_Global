@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<title>NCOVID-2019 Tracker</title>
+	</head>
+
+	<body>
+		<!-- Navbar start -->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#myNavbar"
+			>
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item mx-2 nav-active">
+						<a href="index.html" class="nav-link" id="gbl">Global</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Navbar Ends -->
+		<!-- Global Data -->
+		<div id="globaldataop"></div>
+		<!-- Global Data ends -->
+		<!--data starts  -->
+		<h5 class="text-center p-5"><u> Country Details</u></h5>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-6 m-auto">
+					<h3 class="text-center mb-3"></h3>
+					<div class="form-group">
+						<input
+							type="text"
+							id="search"
+							class="form-control form-control-lg"
+							placeholder="Search The Country for Details"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-5">
+			<div id="op" class="row"></div>
+		</div>
+
+		<!-- data ends -->
+
+		<!-- footer starts -->
+		<footer class="footer mt-5 py-3 bg-light">
+			<div class="container text-center">
+				<p>
+					NCOVID-2019 Tracker Created Using
+					<a href="https://api.covid19api.com"> Api </a>
+				</p>
+			</div>
+		</footer>
+
+		<!-- footer ends -->
+		<!-- External Script Start -->
+		<script src="js/jquery-3.5.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/script.js"></script>
+		<!-- External Script Ends -->
+	</body>
+</html>
